@@ -1,0 +1,212 @@
+/* Reset and box-sizing */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and global styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f7f7fb;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header styles */
+header {
+    background: linear-gradient(135deg, #0077cc, #005fa3); /* Gradient for visual appeal */
+    color: white;
+    padding: 20px 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background 0.3s ease; /* Smooth transition for background */
+}
+
+/* Title styling */
+header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+/* Container for the navigation elements */
+.nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Search bar styles */
+.search-bar {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    width: 250px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.search-bar:focus {
+    border-color: #005fa3;
+}
+
+/* Navigation buttons container */
+.nav-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+/* Button to toggle all articles */
+.toggle-btn {
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-btn:hover {
+    background-color: #005fa3;
+}
+
+.toggle-btn:focus {
+    outline: none;
+}
+
+/* Main content */
+main {
+    flex: 1;
+    padding: 20px;
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}
+
+/* File types container */
+#file-types {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Article styling */
+article {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+article:hover {
+    transform: translateY(-5px);
+}
+
+/* Article icon */
+article img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+/* Heading styles */
+article h2 {
+    color: #0077cc;
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: 600;
+}
+
+/* Paragraphs inside articles */
+article p {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+}
+
+article p strong {
+    color: #333;
+}
+
+/* Button styling for individual article */
+.more-btn {
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.more-btn:hover {
+    background-color: #005fa3;
+}
+
+.more-btn:focus {
+    outline: none;
+}
+
+/* Hide additional content initially */
+.additional-content {
+    display: none;
+    margin-top: 10px;
+    font-size: 0.95rem;
+    color: #777;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    font-size: 0.9rem;
+    border-top: 2px solid #444;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    main {
+        padding: 15px;
+    }
+
+    article {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    article img {
+        margin-bottom: 15px;
+    }
+}

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Types Explained</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <h1>File Types Explained</h1>
+        <div class="nav-container">
+            <input type="text" id="searchbar" class="search-bar" placeholder="Search by extension..." />
+            <div class="nav-buttons">
+                <button id="open-all" class="toggle-btn">Open All</button>
+                <button id="close-all" class="toggle-btn">Close All</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="file-types">
+            <article id="doc">
+                <img src="./images/doc/doc-document-download-svgrepo-com.svg" alt=".DOC Icon">
+                <h2>DOC</h2>
+                <p><strong>File Type:</strong> Document</p>
+                <p><strong>Extension:</strong> .doc</p>
+                <p><strong>Associated Applications:</strong> Microsoft Word, Google Docs</p>
+                <p><strong>Reasons for Using:</strong> For creating and formatting text-rich documents.</p>
+                <button class="more-btn" onclick="toggleContent('doc-content')">More</button>
+                <div class="additional-content" id="doc-content">
+                    <p><strong>Relevant Images:</strong> Text, images, tables, charts</p>
+                    <p><strong>Compatibility:</strong> Compatible with most word processors</p>
+                    <p><strong>Quality and File Size:</strong> High-quality formatting; larger file size than plain text.</p>
+                </div>
+            </article>
+
+            <article id="rtf">
+                <img src="./images/rtf/rtf-svgrepo-com.svg" alt=".RTF Icon">
+                <h2>RTF</h2>
+                <p><strong>File Type:</strong> Rich Text Format</p>
+                <p><strong>Extension:</strong> .rtf</p>
+                <p><strong>Associated Applications:</strong> Microsoft Word, WordPad</p>
+                <p><strong>Reasons for Using:</strong> Cross-platform formatted text files</p>
+                <button class="more-btn" onclick="toggleContent('rtf-content')">More</button>
+                <div class="additional-content" id="rtf-content">
+                    <p><strong>Relevant Images:</strong> Text, basic formatting</p>
+                    <p><strong>Compatibility:</strong> Supported by most word processors</p>
+                    <p><strong>Quality and File Size:</strong> Moderate size; retains basic formatting.</p>
+                </div>
+            </article>
+
+            <article id="txt">
+                <img src="./images/txt/txt-document-svgrepo-com.svg" alt=".TXT Icon">
+                <h2>TXT</h2>
+                <p><strong>File Type:</strong> Plain Text</p>
+                <p><strong>Extension:</strong> .txt</p>
+                <p><strong>Associated Applications:</strong> Notepad, TextEdit</p>
+                <p><strong>Reasons for Using:</strong> Simple, lightweight storage for text data</p>
+                <button class="more-btn" onclick="toggleContent('txt-content')">More</button>
+                <div class="additional-content" id="txt-content">
+                    <p><strong>Relevant Images:</strong> Plain text only</p>
+                    <p><strong>Compatibility:</strong> Universally supported</p>
+                    <p><strong>Quality and File Size:</strong> Small file size; no formatting.</p>
+                </div>
+            </article>
+
+            <article id="csv">
+                <img src="./images/csv/csv-file-type-svgrepo-com.svg" alt=".CSV Icon">
+                <h2>CSV</h2>
+                <p><strong>File Type:</strong> Comma-Separated Values</p>
+                <p><strong>Extension:</strong> .csv</p>
+                <p><strong>Associated Applications:</strong> Microsoft Excel, Google Sheets</p>
+                <p><strong>Reasons for Using:</strong> Data storage in tabular format</p>
+                <button class="more-btn" onclick="toggleContent('csv-content')">More</button>
+                <div class="additional-content" id="csv-content">
+                    <p><strong>Relevant Images:</strong> Data rows and columns</p>
+                    <p><strong>Compatibility:</strong> Compatible with spreadsheet applications</p>
+                    <p><strong>Quality and File Size:</strong> Small; lacks formatting beyond basic data structure.</p>
+                </div>
+            </article>
+
+            <article id="pptx">
+                <img src="./images/pptx/pptx-powerpoint-svgrepo-com.svg" alt=".PPTX Icon">
+                <h2>PPTX</h2>
+                <p><strong>File Type:</strong> Presentation</p>
+                <p><strong>Extension:</strong> .pptx</p>
+                <p><strong>Associated Applications:</strong> Microsoft PowerPoint, Google Slides</p>
+                <p><strong>Reasons for Using:</strong> Creating slide-based presentations</p>
+                <button class="more-btn" onclick="toggleContent('pptx-content')">More</button>
+                <div class="additional-content" id="pptx-content">
+                    <p><strong>Relevant Images:</strong> Slides with text, images, and animations</p>
+                    <p><strong>Compatibility:</strong> Compatible with most presentation software</p>
+                    <p><strong>Quality and File Size:</strong> Can be large; supports multimedia content.</p>
+                </div>
+            </article>
+
+            <article id="mp3">
+                <img src="./images/mp3/mp3-file-type-svgrepo-com.svg" alt=".MP3 Icon">
+                <h2>MP3</h2>
+                <p><strong>File Type:</strong> Audio</p>
+                <p><strong>Extension:</strong> .mp3</p>
+                <p><strong>Associated Applications:</strong> VLC, iTunes</p>
+                <p><strong>Reasons for Using:</strong> Popular format for music and audio</p>
+                <button class="more-btn" onclick="toggleContent('mp3-content')">More</button>
+                <div class="additional-content" id="mp3-content">
+                    <p><strong>Relevant Images:</strong> Audio content only</p>
+                    <p><strong>Compatibility:</strong> Compatible with most media players</p>
+                    <p><strong>Quality and File Size:</strong> Quality varies by bitrate; smaller than WAV.</p>
+                </div>
+            </article>
+
+            <article id="mp4">
+                <img src="./images/mp4/mp4-svgrepo-com.svg" alt=".MP4 Icon">
+                <h2>MP4</h2>
+                <p><strong>File Type:</strong> Video</p>
+                <p><strong>Extension:</strong> .mp4</p>
+                <p><strong>Associated Applications:</strong> VLC, QuickTime</p>
+                <p><strong>Reasons for Using:</strong> Versatile video format with high compression</p>
+                <button class="more-btn" onclick="toggleContent('mp4-content')">More</button>
+                <div class="additional-content" id="mp4-content">
+                    <p><strong>Relevant Images:</strong> Video with optional audio</p>
+                    <p><strong>Compatibility:</strong> Works with most video players and online platforms</p>
+                    <p><strong>Quality and File Size:</strong> High quality with manageable size.</p>
+                </div>
+            </article>
+
+            <article id="bmp">
+                <img src="./images/bmp/bmp-file-format-symbol-svgrepo-com.svg" alt=".BMP Icon">
+                <h2>BMP</h2>
+                <p><strong>File Type:</strong> Bitmap Image</p>
+                <p><strong>Extension:</strong> .bmp</p>
+                <p><strong>Associated Applications:</strong> Paint, Photoshop</p>
+                <p><strong>Reasons for Using:</strong> High-quality uncompressed images</p>
+                <button class="more-btn" onclick="toggleContent('bmp-content')">More</button>
+                <div class="additional-content" id="bmp-content">
+                    <p><strong>Relevant Images:</strong> High-resolution image data</p>
+                    <p><strong>Compatibility:</strong> Supported by most image editors</p>
+                    <p><strong>Quality and File Size:</strong> High quality, large file size due to no compression.</p>
+                </div>
+            </article>
+
+            <article id="jpg">
+                <img src="./images/jpg/jpg-file-type-svgrepo-com.svg" alt=".JPG Icon">
+                <h2>JPG</h2>
+                <p><strong>File Type:</strong> JPEG Image</p>
+                <p><strong>Extension:</strong> .jpg, .jpeg</p>
+                <p><strong>Associated Applications:</strong> Photoshop, GIMP</p>
+                <p><strong>Reasons for Using:</strong> Popular for web images due to compression</p>
+                <button class="more-btn" onclick="toggleContent('jpg-content')">More</button>
+                <div class="additional-content" id="jpg-content">
+                    <p><strong>Relevant Images:</strong> Compressed photographic images</p>
+                    <p><strong>Compatibility:</strong> Compatible with most image viewers</p>
+                    <p><strong>Quality and File Size:</strong> Good quality with smaller size; compression may reduce detail.</p>
+                </div>
+            </article>
+
+            <article id="pdf">
+                <img src="./images/pdf/pdf-file-svgrepo-com.svg" alt=".PDF Icon">
+                <h2>PDF</h2>
+                <p><strong>File Type:</strong> Portable Document Format</p>
+                <p><strong>Extension:</strong> .pdf</p>
+                <p><strong>Associated Applications:</strong> Adobe Acrobat, PDF readers</p>
+                <p><strong>Reasons for Using:</strong> Universal document sharing</p>
+                <button class="more-btn" onclick="toggleContent('pdf-content')">More</button>
+                <div class="additional-content" id="pdf-content">
+                    <p><strong>Relevant Images:</strong> Text, images, form fields</p>
+                    <p><strong>Compatibility:</strong> Supported across all major platforms</p>
+                    <p><strong>Quality and File Size:</strong> Quality remains intact; size varies with content.</p>
+                </div>
+            </article>
+
+            <article id="xlsx">
+                <img src="./images/xlsx/xlsx-file-svgrepo-com.svg" alt=".XLSX Icon">
+                <h2>XLSX</h2>
+                <p><strong>File Type:</strong> Spreadsheet</p>
+                <p><strong>Extension:</strong> .xlsx</p>
+                <p><strong>Associated Applications:</strong> Microsoft Excel, Google Sheets, LibreOffice Calc</p>
+                <p><strong>Reasons for Using:</strong> Used for data organization, calculations, and charting in spreadsheet format.</p>
+                <button class="more-btn" onclick="toggleContent('xlsx-content')">More</button>
+                <div class="additional-content" id="xlsx-content">
+                    <p><strong>Relevant Images:</strong> Rows and columns of data, charts, formulas</p>
+                    <p><strong>Compatibility:</strong> Supported by most spreadsheet programs, though some advanced features may not fully transfer.</p>
+                    <p><strong>Quality and File Size:</strong> File size depends on data complexity; can be large with formulas and embedded objects.</p>
+                </div>
+            </article>
+
+            <article id="accdb">
+                <img src="./images/accdb/database-ui-web-2-svgrepo-com.svg" alt=".ACCDB Icon">
+                <h2>ACCDB</h2>
+                <p><strong>File Type:</strong> Database</p>
+                <p><strong>Extension:</strong> .accdb</p>
+                <p><strong>Associated Applications:</strong> Microsoft Access</p>
+                <p><strong>Reasons for Using:</strong> Used for storing and managing relational databases in Microsoft Access.</p>
+                <button class="more-btn" onclick="toggleContent('accdb-content')">More</button>
+                <div class="additional-content" id="accdb-content">
+                    <p><strong>Relevant Images:</strong> Tables, forms, queries, and reports</p>
+                    <p><strong>Compatibility:</strong> Primarily works with Microsoft Access; limited compatibility with other database software.</p>
+                    <p><strong>Quality and File Size:</strong> File size can be large depending on the data and objects stored.</p>
+                </div>
+            </article>
+
+            <article id="sql">
+                <img src="./images/sql/sql-database-sql-azure-svgrepo-com.svg" alt=".SQL Icon">
+                <h2>SQL</h2>
+                <p><strong>File Type:</strong> Structured Query Language Script</p>
+                <p><strong>Extension:</strong> .sql</p>
+                <p><strong>Associated Applications:</strong> MySQL, PostgreSQL, SQLite, Microsoft SQL Server</p>
+                <p><strong>Reasons for Using:</strong> For writing, managing, and executing database queries.</p>
+                <button class="more-btn" onclick="toggleContent('sql-content')">More</button>
+                <div class="additional-content" id="sql-content">
+                    <p><strong>Relevant Images:</strong> Plain text with SQL commands</p>
+                    <p><strong>Compatibility:</strong> Works with SQL-based database systems; can be imported or exported.</p>
+                    <p><strong>Quality and File Size:</strong> Typically small file size; purely text-based.</p>
+                </div>
+            </article>
+
+            <article id="apk">
+                <img src="./images/apk/apk-file-format-symbol-svgrepo-com.svg" alt=".APK Icon">
+                <h2>APK</h2>
+                <p><strong>File Type:</strong> Android Package</p>
+                <p><strong>Extension:</strong> .apk</p>
+                <p><strong>Associated Applications:</strong> Android OS (for app installation), APKMirror (for downloading)</p>
+                <p><strong>Reasons for Using:</strong> Contains all components needed to install an Android app.</p>
+                <button class="more-btn" onclick="toggleContent('apk-content')">More</button>
+                <div class="additional-content" id="apk-content">
+                    <p><strong>Relevant Images:</strong> Includes app resources like images, XML files, and code</p>
+                    <p><strong>Compatibility:</strong> Compatible only with Android devices.</p>
+                    <p><strong>Quality and File Size:</strong> File size varies depending on the app’s content; larger for apps with media resources.</p>
+                </div>
+            </article>
+
+            <article id="html">
+                <img src="./images/html/html-5-svgrepo-com.svg" alt=".HTML Icon">
+                <h2>HTML</h2>
+                <p><strong>File Type:</strong> HyperText Markup Language</p>
+                <p><strong>Extension:</strong> .html</p>
+                <p><strong>Associated Applications:</strong> Web browsers (Chrome, Firefox), code editors (VS Code, Sublime Text)</p>
+                <p><strong>Reasons for Using:</strong> Standard format for web pages and online content.</p>
+                <button class="more-btn" onclick="toggleContent('html-content')">More</button>
+                <div class="additional-content" id="html-content">
+                    <p><strong>Relevant Images:</strong> Structure and content of web pages with embedded images and multimedia</p>
+                    <p><strong>Compatibility:</strong> Supported by all major web browsers.</p>
+                    <p><strong>Quality and File Size:</strong> Small file size for plain HTML; file size can increase with embedded resources.</p>
+                </div>
+            </article>
+
+            <article id="css">
+                <img src="./images/css/css-svgrepo-com.svg" alt=".CSS Icon">
+                <h2>CSS</h2>
+                <p><strong>File Type:</strong> Cascading Style Sheets</p>
+                <p><strong>Extension:</strong> .css</p>
+                <p><strong>Associated Applications:</strong> Web browsers, code editors (VS Code, Atom)</p>
+                <p><strong>Reasons for Using:</strong> Defines the style, layout, and design of web pages.</p>
+                <button class="more-btn" onclick="toggleContent('css-content')">More</button>
+                <div class="additional-content" id="css-content">
+                    <p><strong>Relevant Images:</strong> Style definitions for fonts, colors, layouts</p>
+                    <p><strong>Compatibility:</strong> Works alongside HTML in web browsers.</p>
+                    <p><strong>Quality and File Size:</strong> Typically small in size; larger if it contains many complex style rules.</p>
+                </div>
+            </article>
+
+            <article id="py">
+                <img src="./images/py/python-svgrepo-com.svg" alt=".PY Icon">
+                <h2>PY</h2>
+                <p><strong>File Type:</strong> Python Script</p>
+                <p><strong>Extension:</strong> .py</p>
+                <p><strong>Associated Applications:</strong> Python interpreter, code editors (PyCharm, VS Code)</p>
+                <p><strong>Reasons for Using:</strong> To execute scripts and programs written in Python.</p>
+                <button class="more-btn" onclick="toggleContent('py-content')">More</button>
+                <div class="additional-content" id="py-content">
+                    <p><strong>Relevant Images:</strong> Plain text with Python code</p>
+                    <p><strong>Compatibility:</strong> Compatible with any Python environment.</p>
+                    <p><strong>Quality and File Size:</strong> Small file size; purely text-based scripts.</p>
+                </div>
+            </article>
+
+            <article id="js">
+                <img src="./images/javascript/javascript-svgrepo-com.svg" alt=".JS Icon">
+                <h2>JS</h2>
+                <p><strong>File Type:</strong> JavaScript Script</p>
+                <p><strong>Extension:</strong> .js</p>
+                <p><strong>Associated Applications:</strong> Web browsers, code editors (VS Code, Sublime Text)</p>
+                <p><strong>Reasons for Using:</strong> To add interactivity and dynamic behavior to web pages.</p>
+                <button class="more-btn" onclick="toggleContent('js-content')">More</button>
+                <div class="additional-content" id="js-content">
+                    <p><strong>Relevant Images:</strong> Dynamic behavior, animations, and data manipulation on web pages.</p>
+                    <p><strong>Compatibility:</strong> Compatible with all modern web browsers that support JavaScript.</p>
+                    <p><strong>Quality and File Size:</strong> Small to medium file size; used for client-side scripting.</p>
+                </div>
+            </article>
+
+            <article id="json">
+                <img src="./images/json/json-svgrepo-com.svg" alt=".JSON Icon">
+                <h2>JSON</h2>
+                <p><strong>File Type:</strong> JavaScript Object Notation</p>
+                <p><strong>Extension:</strong> .json</p>
+                <p><strong>Associated Applications:</strong> Code editors (VS Code, Sublime Text), web APIs, data interchange platforms</p>
+                <p><strong>Reasons for Using:</strong> To store and transport structured data, commonly used for configuration and API responses.</p>
+                <button class="more-btn" onclick="toggleContent('json-content')">More</button>
+                <div class="additional-content" id="json-content">
+                    <p><strong>Relevant Images:</strong> Structured data in key-value pairs, commonly used for data exchange.</p>
+                    <p><strong>Compatibility:</strong> Compatible with various programming languages and tools.</p>
+                    <p><strong>Quality and File Size:</strong> Small file size; easy to read and parse by machines and humans.</p>
+                </div>
+            </article>
+            
+            <article id="xml">
+                <img src="./images/xml/xml-svgrepo-com.svg" alt=".XML Icon">
+                <h2>XML</h2>
+                <p><strong>File Type:</strong> Extensible Markup Language</p>
+                <p><strong>Extension:</strong> .xml</p>
+                <p><strong>Associated Applications:</strong> Text editors (VS Code, Sublime Text), XML parsers, web services</p>
+                <p><strong>Reasons for Using:</strong> To store and transport structured data in a human-readable format.</p>
+                <button class="more-btn" onclick="toggleContent('xml-content')">More</button>
+                <div class="additional-content" id="xml-content">
+                    <p><strong>Relevant Images:</strong> Hierarchical data structures with opening and closing tags.</p>
+                    <p><strong>Compatibility:</strong> Compatible with a wide variety of programming languages, parsers, and web applications.</p>
+                    <p><strong>Quality and File Size:</strong> Medium file size; can contain large amounts of data in a flexible, extensible format.</p>
+                </div>
+            </article>
+            
+            <article id="md">
+                <img src="./images/md/code-svgrepo-com.svg" alt=".MD Icon">
+                <h2>MD</h2>
+                <p><strong>File Type:</strong> Markdown</p>
+                <p><strong>Extension:</strong> .md</p>
+                <p><strong>Associated Applications:</strong> Text editors (VS Code, Sublime Text), Markdown processors (Markable, Dillinger)</p>
+                <p><strong>Reasons for Using:</strong> To write simple, readable text that can be converted to HTML for web publishing.</p>
+                <button class="more-btn" onclick="toggleContent('md-content')">More</button>
+                <div class="additional-content" id="md-content">
+                    <p><strong>Relevant Images:</strong> Plain text with special syntax for formatting headings, lists, links, and images.</p>
+                    <p><strong>Compatibility:</strong> Compatible with a variety of text editors and tools that render Markdown to HTML.</p>
+                    <p><strong>Quality and File Size:</strong> Small file size; ideal for documentation, README files, and web content.</p>
+                </div>
+            </article>
+
+            <article id="exe">
+                <img src="./images/exe/exe-svgrepo-com.svg" alt=".EXE Icon">
+                <h2>EXE</h2>
+                <p><strong>File Type:</strong> Executable File</p>
+                <p><strong>Extension:</strong> .exe</p>
+                <p><strong>Associated Applications:</strong> Windows operating system, installation programs, system utilities</p>
+                <p><strong>Reasons for Using:</strong> To run programs or applications on a Windows-based system.</p>
+                <button class="more-btn" onclick="toggleContent('exe-content')">More</button>
+                <div class="additional-content" id="exe-content">
+                    <p><strong>Relevant Images:</strong> Icon representing a program or utility that can be launched on Windows.</p>
+                    <p><strong>Compatibility:</strong> Only compatible with Windows operating systems, although some can be run on other platforms using emulators or compatibility layers.</p>
+                    <p><strong>Quality and File Size:</strong> Varies depending on the program; can range from small utilities to large software packages.</p>
+                </div>
+            </article>
+
+            <article id="png">
+                <img src="./images/png/png-svgrepo-com.svg" alt=".PNG Icon">
+                <h2>PNG</h2>
+                <p><strong>File Type:</strong> Portable Network Graphics</p>
+                <p><strong>Extension:</strong> .png</p>
+                <p><strong>Associated Applications:</strong> Image viewers, photo editing software (Photoshop, GIMP), web browsers</p>
+                <p><strong>Reasons for Using:</strong> To store digital images with lossless compression, often used for web graphics and icons.</p>
+                <button class="more-btn" onclick="toggleContent('png-content')">More</button>
+                <div class="additional-content" id="png-content">
+                    <p><strong>Relevant Images:</strong> Images with transparent backgrounds and high-quality compression without loss of data.</p>
+                    <p><strong>Compatibility:</strong> Widely supported by image viewers, browsers, and design software.</p>
+                    <p><strong>Quality and File Size:</strong> Lossless compression results in high image quality, but larger file sizes than JPG.</p>
+                </div>
+            </article>
+
+            <article id="zip">
+                <img src="./images/zip/zip-file-type-svgrepo-com.svg" alt=".ZIP Icon">
+                <h2>ZIP</h2>
+                <p><strong>File Type:</strong> Compressed Archive</p>
+                <p><strong>Extension:</strong> .zip</p>
+                <p><strong>Associated Applications:</strong> Archive managers (WinRAR, 7-Zip), file explorers</p>
+                <p><strong>Reasons for Using:</strong> To compress files and folders for easier storage, sharing, and transfer.</p>
+                <button class="more-btn" onclick="toggleContent('zip-content')">More</button>
+                <div class="additional-content" id="zip-content">
+                    <p><strong>Relevant Images:</strong> Compressed folder containing one or more files or folders.</p>
+                    <p><strong>Compatibility:</strong> Supported by most operating systems and archive utilities.</p>
+                    <p><strong>Quality and File Size:</strong> Compressed format; reduces file size for faster uploads and downloads.</p>
+                </div>
+            </article>
+
+            <article id="gif">
+                <img src="./images/gif/gif-svgrepo-com.svg" alt=".GIF Icon">
+                <h2>GIF</h2>
+                <p><strong>File Type:</strong> Graphics Interchange Format</p>
+                <p><strong>Extension:</strong> .gif</p>
+                <p><strong>Associated Applications:</strong> Image viewers, web browsers, social media platforms</p>
+                <p><strong>Reasons for Using:</strong> To display short animations or images with transparency, often used for web graphics and memes.</p>
+                <button class="more-btn" onclick="toggleContent('gif-content')">More</button>
+                <div class="additional-content" id="gif-content">
+                    <p><strong>Relevant Images:</strong> Animated or static images with limited color range.</p>
+                    <p><strong>Compatibility:</strong> Supported across all browsers and social media platforms.</p>
+                    <p><strong>Quality and File Size:</strong> Compressed format; supports small file sizes but limited to 256 colors.</p>
+                </div>
+            </article>
+            
+            <article id="avi">
+                <img src="./images/avi/avi-file-type-svgrepo-com.svg" alt=".AVI Icon">
+                <h2>AVI</h2>
+                <p><strong>File Type:</strong> Audio Video Interleave</p>
+                <p><strong>Extension:</strong> .avi</p>
+                <p><strong>Associated Applications:</strong> Media players (VLC, Windows Media Player), video editing software</p>
+                <p><strong>Reasons for Using:</strong> To store uncompressed or minimally compressed video for high-quality playback.</p>
+                <button class="more-btn" onclick="toggleContent('avi-content')">More</button>
+                <div class="additional-content" id="avi-content">
+                    <p><strong>Relevant Images:</strong> Video files with high visual quality and minimal compression.</p>
+                    <p><strong>Compatibility:</strong> Compatible with most media players, but larger in file size compared to MP4.</p>
+                    <p><strong>Quality and File Size:</strong> High-quality video, typically with large file sizes due to minimal compression.</p>
+                </div>
+            </article>
+
+            <article id="psd">
+                <img src="./images/psd/psd-file-type-svgrepo-com.svg" alt=".PSD Icon">
+                <h2>PSD</h2>
+                <p><strong>File Type:</strong> Adobe Photoshop Document</p>
+                <p><strong>Extension:</strong> .psd</p>
+                <p><strong>Associated Applications:</strong> Adobe Photoshop, Affinity Photo</p>
+                <p><strong>Reasons for Using:</strong> To edit and store images with layers, adjustments, and high-quality detail.</p>
+                <button class="more-btn" onclick="toggleContent('psd-content')">More</button>
+                <div class="additional-content" id="psd-content">
+                    <p><strong>Relevant Images:</strong> High-quality images with editable layers and effects.</p>
+                    <p><strong>Compatibility:</strong> Primarily compatible with Adobe Photoshop, but some other software can import PSDs.</p>
+                    <p><strong>Quality and File Size:</strong> Large file sizes due to high-resolution and multiple editable layers.</p>
+                </div>
+            </article>
+        </section>
+    <footer>
+        <p>2024 Taylor Gratton 877899</p>
+    </footer>
+</main>
+        <script src="./js/script.js"></script>
+    </body>
+</html>
